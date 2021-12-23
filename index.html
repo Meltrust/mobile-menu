@@ -6,12 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./css/main.css" />
     <link rel="icon" href="./favicon.ico" />
+    <script src="index.js" defer></script> 
     <title>Aziz Mejri - Portfolio</title>
   </head>
   <body>
     <header>
       <h1 id="logo">Aziz Mejri</h1>
-      <button type="button" class="menu-bars">
+      <button type="button" class="menu-bars" onclick="toggleMobileMenu()">
         <i class="fas fa-bars"></i>
       </button>
       <nav id="desktop-nav">
@@ -25,6 +26,15 @@
           </li>
         </ul>
       </nav>
+      <nav id="menuMobile" class="menu-mobile">
+        <ul class="list-menu">
+          <li><a href="#" >Hello</a></li>
+          <li><a href="#" >Portfolio</a></li>
+          <li><a href="#" >About</a></li>
+          <li><a href="#" >Contact</a></li>
+        </ul>
+        <i id="close-button" class="fas fa-times fa-2x cross invisible" onclick="toggleMobileMenu()"></i>
+    </nav>
     </header>
     <main>
       <div id="intro">
