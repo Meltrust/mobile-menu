@@ -11,6 +11,7 @@ const toggleMobileMenu = () => {
 
 const button = document.getElementById('menuBars');
 button.addEventListener('click', toggleMobileMenu);
+
 const item = document.querySelectorAll('.list-menu-item');
 item.forEach((e) => {
   e.addEventListener('click', () => elem.classList.remove('show-menu-mobile'));
