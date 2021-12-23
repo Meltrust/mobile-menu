@@ -1,4 +1,3 @@
-/* eslint-disable no-unused-vars */
 const elem = document.getElementById('menuMobile');
 const toggleMobileMenu = () => {
   // const logoName = document.getElementById('logo');
@@ -9,7 +8,10 @@ const toggleMobileMenu = () => {
     elem.classList.remove('show-menu-mobile');
   }
 };
+
+const button = document.getElementById('menuBars');
+button.addEventListener('click', toggleMobileMenu);
 const item = document.querySelectorAll('.list-menu-item');
 item.forEach((e) => {
-  e.addEventListener('click', (e) => elem.classList.remove('show-menu-mobile'));
+  e.addEventListener('click', () => elem.classList.remove('show-menu-mobile'));
 });
