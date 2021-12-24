@@ -6,42 +6,47 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./css/main.css" />
     <link rel="icon" href="./favicon.ico" />
-    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
-    <script src="index.js" defer></script> 
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+    <script src="index.js" defer></script>
     <title>Aziz Mejri - Portfolio</title>
   </head>
   <body>
     <a name="top"></a>
     <header>
+      <h1 id="logo">Aziz Mejri</h1>
+      <button type="button" title="menu" class="menu-bars" id="menuBars">
+        <i class="fas fa-bars"></i>
+      </button>
+      <nav id="desktop-nav">
+        <ul>
+          <li><a class="nav-link" href="#projects">Portoflio</a></li>
+          <li><a class="nav-link" href="#about-me">About</a></li>
+          <li>
+            <a class="nav-link" href="#contact"
+              >Contact <i class="far fa-envelope"></i
+            ></a>
+          </li>
+        </ul>
+      </nav>
 
-      
-        <h1 id="logo">Aziz Mejri</h1>
-        <button type="button" title="menu" class="menu-bars" id="menuBars" >
-          <i class="fas fa-bars"></i>
-        </button>
-        <nav id="desktop-nav">
-          <ul>
-            <li><a class="nav-link" href="#projects">Portoflio</a></li>
-            <li><a class="nav-link" href="#about-me">About</a></li>
-            <li>
-              <a class="nav-link" href="#contact"
-                >Contact <i class="far fa-envelope"></i
-              ></a>
-            </li>
-          </ul>
-        </nav>
-      
-
-      
       <nav id="menuMobile" class="menu-mobile">
         <ul class="list-menu">
-          <li class="list-menu-item"><a href="#top" >Hello</a></li>
-          <li class="list-menu-item"><a href="#projects" >Portfolio</a></li>
-          <li class="list-menu-item"><a href="#about-me" >About</a></li>
-          <li class="list-menu-item"><a href="#contact" >Contact</a></li>
+          <li class="list-menu-item"><a href="#top">Hello</a></li>
+          <li class="list-menu-item"><a href="#projects">Portfolio</a></li>
+          <li class="list-menu-item"><a href="#about-me">About</a></li>
+          <li class="list-menu-item"><a href="#contact">Contact</a></li>
         </ul>
-        <i id="close-button" class="fas fa-times fa-2x cross invisible" onclick="toggleMobileMenu()"></i>
-    </nav>
+        <i
+          id="close-button"
+          class="fas fa-times fa-2x cross invisible"
+          onclick="toggleMobileMenu()"
+        ></i>
+      </nav>
     </header>
     <main>
       <div id="intro">
@@ -455,10 +460,5 @@
         />
       </a>
     </footer>
-    <!-- <script
-      src="https://kit.fontawesome.com/e966a3bd22.js"
-      crossorigin="anonymous"
-      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
-    ></script> -->
   </body>
 </html>
